@@ -1,3 +1,13 @@
+0) Folder structure creation prompt
+
+ecommerce-data-pipeline/
+  data/
+  scripts/
+  sql/
+  README.md
+i want you to create a folder in the above mentioned structure.
+
+
 1) Synthetic e-commerce data prompt
 
 Generate 5 synthetic CSV datasets for an e-commerce system.
