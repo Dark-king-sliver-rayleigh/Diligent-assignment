@@ -1,0 +1,106 @@
+1) Synthetic e-commerce data prompt
+
+Generate 5 synthetic CSV datasets for an e-commerce system.
+Schemas:
+
+products.csv:
+  product_id, name, category, price, cost, stock, created_at
+
+customers.csv:
+  customer_id, first_name, last_name, email, join_date, country
+
+orders.csv:
+  order_id, customer_id, order_date, total_amount, status
+
+order_items.csv:
+  order_item_id, order_id, product_id, quantity, unit_price
+
+reviews.csv:
+  review_id, product_id, customer_id, rating, comment, review_date
+
+Requirements:
+- products: 100 rows
+- customers: 300 rows
+- orders: 500 rows
+- order_items: 1000 rows
+- reviews: 50 rows
+- Ensure referential integrity between IDs
+- Output each file as a valid CSV block so I can save it into the /data folder.
+
+
+2) Ingestion script prompt
+
+Write a Python script that reads all CSVs from the /data folder and ingests them into an sqlite database named ecommerce.db using pandas and sqlite3. Add indexes for faster joins.
+for example :
+import pandas as pd
+import sqlite3
+import os
+
+DB_NAME = "ecommerce.db"
+DATA_DIR = "../data"
+
+conn = sqlite3.connect(DB_NAME)
+
+tables = [
+    "products",
+    "customers",
+    "orders",
+    "order_items",
+    "reviews"
+]
+
+for t in tables:
+    df = pd.read_csv(os.path.join(DATA_DIR, f"{t}.csv"))
+    df.to_sql(t, conn, if_exists="replace", index=False)
+
+cursor = conn.cursor()
+cursor.execute("CREATE INDEX IF NOT EXISTS idx_orders_customer ON orders(customer_id);")
+cursor.execute("CREATE INDEX IF NOT EXISTS idx_item_order ON order_items(order_id);")
+cursor.execute("CREATE INDEX IF NOT EXISTS idx_item_product ON order_items(product_id);")
+cursor.execute("CREATE INDEX IF NOT EXISTS idx_reviews_product ON reviews(product_id);")
+
+conn.commit()
+conn.close()
+
+print("Ingestion complete.")
+
+
+3) SQL queries prompt
+
+create this file /sql/queries.sql
+SELECT
+  p.product_id,
+  p.name,
+  SUM(oi.quantity * oi.unit_price) AS revenue,
+  AVG(r.rating) AS avg_rating
+FROM order_items oi
+JOIN products p ON p.product_id = oi.product_id
+JOIN orders o ON o.order_id = oi.order_id
+LEFT JOIN reviews r ON r.product_id = p.product_id
+WHERE o.status = 'completed'
+GROUP BY p.product_id
+ORDER BY revenue DESC
+LIMIT 10;
+
+SELECT
+  strftime('%Y-%m', o.order_date) AS month,
+  COUNT(o.order_id) AS total_orders,
+  SUM(oi.quantity * oi.unit_price) AS revenue
+FROM orders o
+JOIN order_items oi ON oi.order_id = o.order_id
+WHERE o.status = 'completed'
+GROUP BY month
+ORDER BY month DESC;
+
+SELECT
+  c.customer_id,
+  c.first_name || ' ' || c.last_name AS name,
+  SUM(oi.quantity * oi.unit_price) AS total_spent
+FROM customers c
+JOIN orders o ON o.customer_id = c.customer_id
+JOIN order_items oi ON oi.order_id = o.order_id
+WHERE o.status = 'completed'
+GROUP BY c.customer_id
+ORDER BY total_spent DESC
+LIMIT 10;
+Put all 3 in our file.
