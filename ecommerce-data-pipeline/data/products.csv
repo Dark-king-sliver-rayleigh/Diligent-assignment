@@ -1,0 +1,101 @@
+product_id,name,category,price,cost,stock,created_at
+1,Wireless Mouse,Electronics,29.99,15.50,145,2024-01-15
+2,USB-C Cable,Electronics,12.99,5.20,320,2024-01-18
+3,Laptop Stand,Office,45.99,22.00,89,2024-01-20
+4,Mechanical Keyboard,Electronics,89.99,45.00,67,2024-01-22
+5,Desk Lamp,Office,34.99,18.50,123,2024-01-25
+6,Phone Case,Accessories,19.99,8.00,245,2024-02-01
+7,Bluetooth Speaker,Electronics,59.99,30.00,98,2024-02-03
+8,Notebook Set,Stationery,15.99,6.50,410,2024-02-05
+9,Water Bottle,Home,22.99,10.00,178,2024-02-08
+10,Backpack,Accessories,79.99,38.00,134,2024-02-10
+11,Wireless Earbuds,Electronics,79.99,40.00,156,2024-02-12
+12,Monitor Stand,Office,54.99,28.00,76,2024-02-15
+13,Desk Organizer,Office,24.99,12.00,201,2024-02-18
+14,Power Bank,Electronics,39.99,20.00,189,2024-02-20
+15,Screen Cleaner,Accessories,9.99,3.50,456,2024-02-22
+16,Ergonomic Chair Cushion,Office,49.99,25.00,92,2024-02-25
+17,Cable Management Box,Office,18.99,8.50,167,2024-02-28
+18,Wireless Charger,Electronics,29.99,15.00,223,2024-03-02
+19,Sticky Notes Pack,Stationery,8.99,3.20,589,2024-03-05
+20,Coffee Mug,Home,14.99,6.00,312,2024-03-08
+21,Pen Set,Stationery,19.99,8.50,278,2024-03-10
+22,Mouse Pad,Accessories,12.99,5.00,367,2024-03-12
+23,Laptop Sleeve,Accessories,34.99,17.00,145,2024-03-15
+24,Desk Plant,Home,16.99,7.50,198,2024-03-18
+25,Headphone Stand,Office,25.99,12.50,134,2024-03-20
+26,USB Hub,Electronics,32.99,16.00,167,2024-03-22
+27,Webcam Cover,Accessories,6.99,2.50,678,2024-03-25
+28,Whiteboard Markers,Stationery,11.99,5.00,423,2024-03-28
+29,Laptop Cooling Pad,Electronics,42.99,21.00,98,2024-03-30
+30,Drawer Organizer,Office,21.99,10.50,156,2024-04-02
+31,Phone Stand,Accessories,14.99,6.50,289,2024-04-05
+32,External SSD 500GB,Electronics,89.99,45.00,112,2024-04-08
+33,Planner 2024,Stationery,24.99,11.00,234,2024-04-10
+34,Tissue Box Holder,Home,13.99,6.00,267,2024-04-12
+35,Cable Clips,Accessories,7.99,3.00,512,2024-04-15
+36,Wireless Keyboard,Electronics,69.99,35.00,89,2024-04-18
+37,Document Holder,Office,17.99,8.00,178,2024-04-20
+38,Highlighter Set,Stationery,9.99,4.00,445,2024-04-22
+39,Travel Adapter,Electronics,24.99,12.00,201,2024-04-25
+40,Stapler,Office,12.99,5.50,334,2024-04-28
+41,Coasters Set,Home,11.99,5.00,389,2024-05-01
+42,Book Stand,Office,28.99,14.00,145,2024-05-03
+43,Calculator,Office,16.99,7.50,223,2024-05-05
+44,Bluetooth Mouse,Electronics,39.99,20.00,167,2024-05-08
+45,Printer Paper,Stationery,19.99,8.50,456,2024-05-10
+46,Lunch Box,Home,18.99,8.50,234,2024-05-12
+47,Wrist Rest,Accessories,15.99,7.00,289,2024-05-15
+48,HDMI Cable,Electronics,14.99,6.50,312,2024-05-18
+49,File Folders,Stationery,13.99,6.00,378,2024-05-20
+50,Desk Calendar,Stationery,12.99,5.50,267,2024-05-22
+51,Smart Watch Band,Accessories,24.99,11.00,178,2024-05-25
+52,Portable Fan,Electronics,32.99,16.00,134,2024-05-28
+53,Pencil Case,Stationery,10.99,4.50,412,2024-05-30
+54,Phone Holder Car,Accessories,19.99,9.00,256,2024-06-02
+55,LED Desk Light,Office,44.99,22.00,98,2024-06-05
+56,Binder Clips,Stationery,6.99,2.80,589,2024-06-08
+57,Travel Mug,Home,21.99,10.00,223,2024-06-10
+58,Laptop Bag,Accessories,64.99,32.00,112,2024-06-12
+59,Wireless Presenter,Electronics,49.99,25.00,87,2024-06-15
+60,Name Card Holder,Office,14.99,6.50,301,2024-06-18
+61,Scissors Set,Stationery,11.99,5.00,367,2024-06-20
+62,Fitness Tracker,Electronics,79.99,40.00,134,2024-06-22
+63,Storage Boxes,Home,29.99,14.00,189,2024-06-25
+64,Tablet Stand,Accessories,27.99,13.50,167,2024-06-28
+65,Mini Projector,Electronics,199.99,100.00,45,2024-06-30
+66,Paper Clips,Stationery,4.99,2.00,734,2024-07-02
+67,Insulated Bottle,Home,26.99,12.50,201,2024-07-05
+68,Laptop Privacy Screen,Accessories,39.99,19.00,123,2024-07-08
+69,Wireless Trackpad,Electronics,59.99,30.00,98,2024-07-10
+70,Envelope Set,Stationery,8.99,3.50,512,2024-07-12
+71,Spill-Proof Keyboard Cover,Accessories,16.99,7.50,234,2024-07-15
+72,Smart Plug,Electronics,22.99,11.00,178,2024-07-18
+73,Rubber Bands,Stationery,5.99,2.30,645,2024-07-20
+74,Candle Holder,Home,17.99,8.00,267,2024-07-22
+75,Screen Protector,Accessories,13.99,6.00,345,2024-07-25
+76,Gaming Mouse,Electronics,69.99,35.00,89,2024-07-28
+77,Letter Tray,Office,19.99,9.50,189,2024-07-30
+78,Correction Tape,Stationery,7.99,3.20,478,2024-08-02
+79,Portable Charger 20000mAh,Electronics,54.99,27.50,112,2024-08-05
+80,Picture Frame,Home,23.99,11.00,156,2024-08-08
+81,AirPods Case,Accessories,15.99,7.00,278,2024-08-10
+82,Numeric Keypad,Electronics,34.99,17.50,134,2024-08-12
+83,Index Cards,Stationery,6.99,2.80,567,2024-08-15
+84,Aroma Diffuser,Home,39.99,19.00,123,2024-08-18
+85,Laptop Lock,Accessories,24.99,12.00,167,2024-08-20
+86,Ring Light,Electronics,49.99,25.00,87,2024-08-22
+87,Push Pins,Stationery,5.99,2.40,623,2024-08-25
+88,Yoga Mat,Home,34.99,16.50,145,2024-08-28
+89,Cable Sleeve,Accessories,11.99,5.50,312,2024-08-30
+90,Microphone,Electronics,89.99,45.00,76,2024-09-02
+91,Tape Dispenser,Stationery,9.99,4.20,423,2024-09-05
+92,Essential Oil Set,Home,29.99,14.00,178,2024-09-08
+93,Screen Privacy Filter,Accessories,44.99,22.00,98,2024-09-10
+94,USB Microphone,Electronics,79.99,40.00,89,2024-09-12
+95,Adhesive Notes,Stationery,10.99,4.80,389,2024-09-15
+96,Hand Sanitizer Stand,Home,18.99,8.50,234,2024-09-18
+97,Laptop Riser,Office,39.99,19.50,112,2024-09-20
+98,Drawing Tablet,Electronics,149.99,75.00,56,2024-09-22
+99,Magazine Holder,Office,22.99,11.00,167,2024-09-25
+100,Smart Light Bulb,Electronics,32.99,16.50,145,2024-09-28
